@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+/* =========================================
+   1. DEFINE VARIABLES (Light & Dark Mode)
+   ========================================= */
+:root {
+    /* Page Background */
+    --bg-page: #ffffff;
+
+    /* Card Background */
+    --bg-card: #f9fafb;
+
+    /* Button Primary */
+    --btn-pri-bg: #07194a;
+    --btn-pri-text: #ffffff;
+
+    /* Button Secondary */
+    --btn-sec-bg: #f59e0b;
+    --btn-sec-text: #07194a;
+
+    /* Text */
+    --text-head: #07194a;
+    --text-para: #374151;
+
+    /* Border */
+    --border-main: #e5e7eb;
+}
+
+/* When 'dark' class is added to <html> or <body> */
+.dark {
+    /* Page Background */
+    --bg-page: #0f172a;
+
+    /* Card Background */
+    --bg-card: #1e293b;
+
+    /* Button Primary (Same as light, but explicit) */
+    --btn-pri-bg: #07194a;
+    --btn-pri-text: #ffffff;
+
+    /* Button Secondary (Changes in Dark) */
+    --btn-sec-bg: #fbbf24;
+    --btn-sec-text: #0f172a;
+    /* Adjusted dark text for contrast */
+
+    /* Text */
+    --text-head: #ffffff;
+    --text-para: #94a3b8;
+
+    /* Border */
+    --border-main: #334155;
+}
+
+/* =========================================
+   2. MAP VARIABLES TO TAILWIND v4 THEME
+   ========================================= */
+@theme {
+    /* --- COLORS --- */
+    /* Creates classes like: bg-page, text-heading, border-main */
+
+    --color-page: var(--bg-page);
+    --color-card: var(--bg-card);
+
+    --color-btn-primary: var(--btn-pri-bg);
+    --color-btn-primary-text: var(--btn-pri-text);
+
+    --color-btn-secondary: var(--btn-sec-bg);
+    --color-btn-secondary-text: var(--btn-sec-text);
+
+    --color-heading: var(--text-head);
+    --color-paragraph: var(--text-para);
+
+    --color-border-main: var(--border-main);
+
+    /* --- FONTS (Font Family) --- */
+    /* Usage: font-display, font-body */
+    --font-display: "Inter", "sans-serif";
+    --font-body: "Roboto", "sans-serif";
+
+    /* --- FONT SIZES --- */
+    /* Usage: text-tiny, text-huge */
+    --text-tiny: 0.65rem;
+    --text-huge: 3rem;
+
+    /* --- FONT WEIGHTS --- */
+    /* Usage: font-heavy */
+    --font-weight-heavy: 800;
+}
