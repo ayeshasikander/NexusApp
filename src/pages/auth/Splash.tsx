@@ -43,9 +43,6 @@ const SplashScreen: React.FC<SplashScreenProps> = () => {
                     <div className="h-full bg-btn-primary w-1/2 animate-[pulse_1s_cubic-bezier(0.4,0,0.6,1)_infinite]"></div>
                 </div>
 
-                {/* Alternatively: Simple Spinner */}
-                {/* <LoadingOutlined className="text-2xl text-btn-secondary" /> */}
-
             </div>
 
             {/* Footer Version */}
